@@ -1,0 +1,17 @@
+/// @description Selector code
+
+//Draw selector
+if(instance_exists(selector_inst)){
+	with(selector_inst){
+		//Draw selector in all four corners
+		draw_sprite_ext(spr_selector_b, other.selector_frame, bbox_left, bbox_top, 1,1,0,-1,1);
+		draw_sprite_ext(spr_selector_b, other.selector_frame, bbox_right, bbox_top, 1,1,-90,-1,1);
+		draw_sprite_ext(spr_selector_b, other.selector_frame, bbox_right, bbox_bottom, 1,1,180,-1,1);
+		draw_sprite_ext(spr_selector_b, other.selector_frame, bbox_left, bbox_bottom, 1,1,90,-1,1);
+	}
+	//Animations
+	selector_frame += 0.15;
+	if(selector_frame >= selector_frame_number){selector_frame -= selector_frame_number;}
+	//Reset selector instance
+	selector_inst = noone;
+}
