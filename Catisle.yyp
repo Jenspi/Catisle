@@ -43,7 +43,7 @@
   "isEcma":false,
   "LibraryEmitters":[],
   "MetaData":{
-    "IDEVersion":"2024.8.0.169",
+    "IDEVersion":"2024.14.2.213",
   },
   "name":"Catisle",
   "resources":[
@@ -147,8 +147,8 @@
   "resourceType":"GMProject",
   "resourceVersion":"2.0",
   "RoomOrderNodes":[
-    {"roomId":{"name":"roo_main","path":"rooms/roo_main/roo_main.yy",},},
     {"roomId":{"name":"rm_init","path":"rooms/rm_init/rm_init.yy",},},
+    {"roomId":{"name":"roo_main","path":"rooms/roo_main/roo_main.yy",},},
   ],
   "templateType":"game",
   "TextureGroups":[
